@@ -18,16 +18,10 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.button.setOnClickListener { hitungBmi() }
-        binding.resetButton.setOnClickListener { resetBmi() }
+
     }
 
-    private fun resetBmi() {
-        binding.beratEditText.setText("")
-        binding.tinggiEditText.setText("")
-        binding.radioGroup.clearCheck()
-        binding.bmiTextView.setText("")
-        binding.kategoriTextView.setText("")
-    }
+
 
     @SuppressLint("StringFormatMatches")
     private fun hitungBmi() {
